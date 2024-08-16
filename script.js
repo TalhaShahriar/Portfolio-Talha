@@ -1,15 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Custom cursor
-    const cursor = document.querySelector('.cursor');
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
+    // Hamburger menu
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
     });
 
-    // Loader
-    const loader = document.querySelector('.loader');
-    window.addEventListener('load', () => {
-        loader.style.display = 'none';
+    document.querySelectorAll('.nav-menu li a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
     });
 
     // Scroll reveal
