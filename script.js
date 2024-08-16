@@ -82,7 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         // Add your form submission logic here
-        alert('Form submitted! (Note: This is a frontend-only demo)');
+        // alert('Form submitted! (Note: This is a frontend-only demo)');
+        alert('Form submitted! (Thank You!!)');
     });
 
     // Typing effect for hero title

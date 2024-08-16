@@ -179,6 +179,10 @@ h1, h2 {
     box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
 }
 
+.about-text{
+    text-align: justify;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
